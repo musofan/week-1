@@ -31,7 +31,9 @@ class Player:
     
     # create here two local variables to store a unique ID for each player and the player's current 'pot' of money
     # [FILL IN YOUR VARIABLES HERE]
-    
+    playerID = 0
+    potMoney = 0
+    playerCard = 0    
     # in the __init__() function, use the two input variables to initialize the ID and starting pot of each player
     
     def __init__(self, inputID, startingPot):
