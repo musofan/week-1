@@ -26,6 +26,7 @@ gameStake = 50
 cards = range(10)
 
 # Next, let's define a new class to represent each player in the game.
+playerCard = 0 
 
 class Player:
     
@@ -33,7 +34,8 @@ class Player:
     # [FILL IN YOUR VARIABLES HERE]
     playerID = 0
     potMoney = 0
-    playerCard = 0    
+       
+
     # in the __init__() function, use the two input variables to initialize the ID and starting pot of each player
     
     def __init__(self, inputID, startingPot):
@@ -86,7 +88,7 @@ def checkBalances(players):
     
     for player in players:
         #[PRINT OUT EACH PLAYER'S BALANCE BY USING EACH PLAYER'S ACCESSOR FUNCTIONS]
-          print 'Player' + str(Player.returnID) + "has $" + str(Player.returnPot()) + 'left'
+          print 'Player' + str(Player.returnID()) + "has $" + str(Player.returnPot()) + 'left'
   
 # Now we are ready to start the game. First we create an empy list to store the collection of players in the game
 
